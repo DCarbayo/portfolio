@@ -1,0 +1,263 @@
+/*  */
+
+* {
+    box-sizing: border-box;
+    margin: 0 0;
+}
+
+@font-face {
+    font-family: "Big Caslon";
+    src: url("../fonts/Big\ Caslon\ Medium.ttf");
+  }
+
+
+  @font-face {
+    font-family: "Avant Garde Book";
+    src: url("../fonts/ITC\ Avant\ Garde\ Gothic\ LT\ Book.ttf");
+  }
+
+/* MEDIA QUERY */
+
+  /* @media (min-width: 320px) and (max-width: 480px) {
+.navAll{
+    display: none;
+
+} */
+    
+@media(max-width: 414px){
+
+    .navAll{
+        display: none!important;
+    }
+}
+
+
+
+    
+  
+
+body {
+    background-color: white;
+    /* letter-spacing: 5px; */
+
+}
+
+
+
+/* NAVIGATION BAR */
+nav {
+    background-color: white;
+    position: fixed;
+    display: flex;
+    height: 128px;
+    width: 100vw;
+    z-index: 1000;
+    
+}
+nav ul{
+
+    list-style: none;
+    font-family: "Avant Garde Book";
+    font-size: 16px;
+    letter-spacing: 5px;
+
+
+}
+nav li{
+    margin-top: 20px;
+
+}
+
+.navAll{
+    width: 80vw;
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+}
+
+.menuSquare{
+    width: 8vw; 
+    min-width: 48px;
+    background: #FFC54D;
+}
+
+.logo {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 32px;
+}
+
+.logo img {
+
+    height: 96px;
+
+}
+
+.menu {
+    display: flex;
+    align-items: flex-start;
+    
+}
+nav a{
+    color: #A6A6A6;
+    text-decoration: none;
+}
+
+.menu02 {
+    margin-left: 50px;
+}
+
+nav a:hover {
+  
+    color: #2B2B2B;
+    font-weight: bolder;
+    transition: 0.5s;
+
+
+  }
+.mark {
+    
+    margin-top: 4px;
+    position: fixed;
+    width: 8px;
+    height: 8px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;    
+   
+}
+
+nav a:hover .mark {
+    background-color: #FFC54D;
+    transition: 1s;
+    -moz-border-radius: 0%;
+    -webkit-border-radius: 0%;
+    border-radius: 0%; 
+    
+    }
+
+
+
+
+/* HEADER ABOUT */
+
+.header_about p {
+    border-right: .15em solid white;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 62px;
+    font-family: "Big Caslon";
+    color:  #2B2B2B;
+}
+.header_about {
+    padding-top: 192px;
+    margin-left: calc(8vw + 32px);
+    margin-right: calc(8vw + 32px);
+}
+
+.header_about p:nth-child(1) {
+    width: 37em;
+    -webkit-animation: type 4s steps(40, end), blink .5s step-end infinite alternate;
+    animation: type 4s steps(40, end), blink .5s step-end infinite alternate;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes type {
+0% {
+  width: 0;
+}
+1% {
+  opacity: 1;
+}
+100% {
+  opacity: 1;
+}
+}
+
+@-webkit-keyframes type {
+0% {
+  width: 0;
+}
+1% {
+  opacity: 1;
+}
+100% {
+  opacity: 1;
+}
+}
+
+@keyframes blink {
+50% {
+  border-color: transparent;
+}
+}
+@-webkit-keyframes blink {
+50% {
+  border-color: transparent;
+}
+}
+
+/* CONTENT ABOUT */
+
+.content_about {
+    opacity: 0;
+    margin-top: 5vw;
+    margin-left: calc(8vw + 32px);
+    margin-right: calc(8vw + 32px);
+
+    animation-name: aparicion;
+    animation-delay: 2s;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+
+}
+
+.content_about p{
+
+    font-size: 16px;
+    font-family: "Avant Garde Book";
+    color:  #2B2B2B;
+    letter-spacing: 5px;
+    line-height: 2em;
+
+}
+
+
+/* CONTENT_ABOUT ANIMATION */
+
+@keyframes aparicion{
+
+    from {
+        
+        opacity: 0;
+      
+    }
+    to{
+        opacity: 1;
+       
+        
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
